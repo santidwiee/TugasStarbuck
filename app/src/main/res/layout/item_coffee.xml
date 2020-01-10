@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_1">
+        <ImageView
+                android:id="@+id/imgItem"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo_starbucks3"
+                android:layout_centerHorizontal="true"/>
+        <TextView
+                android:id="@+id/namaItem"
+                android:layout_below="@+id/imgItem"
+                android:layout_marginTop="10dp"
+                android:text="Name of Items"
+                android:textSize="20px"
+                android:drawableLeft="@drawable/drink"
+                android:drawablePadding="5dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"/>
+        <TextView
+                android:id="@+id/hargaItem"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/namaItem"
+                android:layout_marginTop="10dp"
+                android:text="Price of Items"
+                android:textSize="20px"
+                android:drawableLeft="@drawable/payment"
+                android:drawablePadding="5dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <CheckBox
+                android:id="@+id/checkItem"
+                android:layout_below="@+id/hargaItem"
+                android:layout_alignParentRight="true"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/login"
+        android:background="@drawable/gradient_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+            android:id="@+id/logoLogin"
+            android:elevation="5dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_starbucks4"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="170dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+
+
+    <TextView
+            android:id="@+id/sloganLogin"
+            android:text="STARBUCKS"
+            android:textStyle="bold"
+            android:elevation="5dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:fontFamily="@font/boogaloo"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/logoLogin"
+            android:textAlignment="center"/>
+
+
+    <RelativeLayout
+            android:background="@drawable/background_1"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <View
+                android:layout_marginTop="130dp"
+                android:id="@+id/view1"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+        <EditText
+                android:id="@+id/Loginemail"
+                android:inputType="textEmailAddress"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/view1"
+                android:layout_marginTop="15dp"
+                android:hint="Email"
+                android:fontFamily="@font/boogaloo"
+                android:drawableLeft="@drawable/person"
+                android:drawablePadding="5dp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:background="@drawable/edit_text"
+                android:layout_width="350dp"
+                android:layout_height="40dp"/>
+        <EditText
+                android:id="@+id/Loginpassword"
+                android:inputType="textPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/Loginemail"
+                android:layout_marginTop="10dp"
+                android:hint="Password"
+                android:fontFamily="@font/boogaloo"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="5dp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:background="@drawable/edit_text"
+                android:layout_width="350dp"
+                android:layout_height="40dp"/>
+        <TextView
+                android:id="@+id/forgetPassword"
+                android:layout_below="@+id/Loginpassword"
+                android:text="Forget your password?"
+                android:fontFamily="@font/boogaloo"
+                android:textColor="@color/colorAccent"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:id="@+id/signInLogin"
+                android:layout_below="@+id/forgetPassword"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_1"
+                android:text="Sign In"
+                android:textSize="30px"
+                android:textAllCaps="false"
+                android:fontFamily="@font/boogaloo"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"/>
+        <View
+                android:id="@+id/view2"
+                android:layout_below="@+id/signInLogin"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"/>
+        <Button
+                android:id="@+id/signUpLogin"
+                android:layout_below="@+id/view2"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="130dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_2"
+                android:text="Sign Up"
+                android:textSize="30px"
+                android:textColor="@color/colorAccent"
+                android:textAllCaps="false"
+                android:fontFamily="@font/boogaloo"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>
